@@ -1,7 +1,7 @@
 const mongoose = require('mongoose')
 
 const connectDB = ()=>{
-    mongoose.connect("mongodb+srv://adpfoods:adpfoods@cluster0.oatd7ix.mongodb.net/adp",{
+    mongoose.connect("mongodb://localhost:27017/adp",{
         useNewUrlParser: true,
         useUnifiedTopology: true,
     })
