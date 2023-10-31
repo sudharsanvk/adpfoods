@@ -84,7 +84,7 @@ export default function Product() {
                     <>
                        <button className='button-cart' style={{background:'transparent'}} onClick={()=>{
                     const id = localStorage.getItem('user')
-                    axios.post(`http://localhost:2882/cart/add/${id}`,{
+                    axios.post(`https://adpfoods.onrender.com/cart/add/${id}`,{
                         productId:data._id,
                         quantity:1
                     })
